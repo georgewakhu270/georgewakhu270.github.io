@@ -1,5 +1,5 @@
 import { SiX } from "@icons-pack/react-simple-icons";
-import { Mail } from "lucide-react"
+import { Mail, ArrowDown, ArrowUp } from "lucide-react"
 import { useEffect, useRef, useState } from "react";
 import { FaLinkedin, FaWhatsapp, FaGithub } from 'react-icons/fa'
 
@@ -42,13 +42,27 @@ function App() {
         <div className="sticky top-20 right-8 z-10 flex justify-end">
           <div className={`pointer-events-auto flex bg-green-500 text-white p-2 rounded-md w-60 transition-all shadow-lg transform hover:scale-105 duration-500 ease-out ${showBadge ? "opacity-75 translate-y-0 scale-100" : "opacity-0 -translate-y-5 scale-95"} `}>
             <p>Available for new opportunities</p>
-          </div></div>
-        <h1>Hello I am</h1>
+          </div>
+        </div>
+        <div className="m-8">
+          <h1 className="tracking-[.16em] font-bold text-sm">HELLO I AM</h1>
+          <h1 className="tracking-[-.075em] font-[800] text-[#555d55] m-[13px]">Derrick Wakhu</h1>
+          <h1 className="mt-[19px] font-[600] text-[#555d55]">Professional | Problem Solver | Lifelong Learner</h1>
+          <h1 className="max-w-[550px] mt-[19px] text-[1.04rem] leading-1.8">I turn ideas into thoughtful, practical solutions. I enjoy learning, solving problems and working with people to make meaningful progress.</h1>
+          <div className="mt-9 flex flex-wrap items-center gap-3">
+            <a href="#projects" className="bg-[#20231f] text-white p-[15px]">Explore my work <ArrowDown size={16}/></a>
+            <a href="mailto:georgewakhu270@gmail.com" className="border border-[#d9ddd6] border-solid px-[20px] py-[14px]">Get in touch <ArrowUp size={16}/></a>
+          </div>
+          {/* <div className="mt-9 flex flex-wrap items-center gap-3">
+                        <a className="button-primary" href="#work">Explore my work <ArrowDown size={16} /></a>
+                        <a className="button-secondary" href={`mailto:${profile.email}`}>Get in touch <ArrowUpRight size={16} /></a>
+                      </div> */}
+        </div>
       </section>
-      <section className="w-full h-screen" id="about">
+      <section className="w-full min-h-screen" id="about">
         <h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1><h1>Hello I am Derrick Wakhu</h1>
       </section>
-      <section className="w-full h-screen" id="skills"></section>
+      <section className="w-full min-h-screen" id="skills"></section>
       <section className="w-full h-screen" id="projects"></section>
       <section className="w-full" id="blogs"></section>
       <section className="w-full p-2" id="contacts">
