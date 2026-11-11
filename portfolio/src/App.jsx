@@ -18,12 +18,12 @@ function App() {
         </div>
         <a href="#contacts">contact</a>
       </header>
-      <section id="home"></section>
-      <section id="about"></section>
-      <section id="skills"></section>
-      <section id="projects"></section>
-      <section id="blogs"></section>
-      <section id="contacts">
+      <section className="container" id="home"></section>
+      <section className="container" id="about"></section>
+      <section className="container" id="skills"></section>
+      <section className="container" id="projects"></section>
+      <section className="container" id="blogs"></section>
+      <section className="container" id="contacts">
         <div className="flex gap-5 justify-items-center justify-center">
           <a href="https://wa.me/+254114386583" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp color="#25D366" size={32} />
