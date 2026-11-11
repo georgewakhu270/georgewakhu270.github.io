@@ -18,27 +18,33 @@ function App() {
         </div>
         <a href="#contacts">contact</a>
       </header>
-      <section className="container h-screen" id="home"></section>
-      <section className="container" id="about"></section>
-      <section className="container" id="skills"></section>
-      <section className="container" id="projects"></section>
-      <section className="container" id="blogs"></section>
-      <section className="container" id="contacts">
-        <div className="flex gap-5 items-center justify-center container m-auto">
+      <section className="w-full h-screen relative overflow-hidden" id="home">
+        <div className="absolute top-5 right-5 z-10">
+        <div className="flex bg-green-500 text-white p-2 rounded-md w-60 relative">
+          <p>Available for new opportunities</p>
+        </div></div>
+        <h1>Hello I am Derrick Wakhu</h1>
+      </section>
+      <section className="w-full" id="about"></section>
+      <section className="w-full" id="skills"></section>
+      <section className="w-full" id="projects"></section>
+      <section className="w-full" id="blogs"></section>
+      <section className="w-full p-2" id="contacts">
+        <div className="flex gap-5 items-center justify-center w-full m-auto p-2">
           <a href="https://wa.me/+254114386583" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp color="#25D366" size={32} />
           </a>
           <a href="mailto:georgewakhu270@gmail.com">
-            <Mail size={32} color="black"/>
+            <Mail size={32} color="black" />
           </a>
           <a href="">
             <SiX color="#000000" size={32} />
           </a>
           <a href="">
-            <FaLinkedin size={32} color="blue"/>
+            <FaLinkedin size={32} color="blue" />
           </a>
           <a href="https://github.com/georgewakhu270" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={32} color="black"/>
+            <FaGithub size={32} color="black" />
           </a>
         </div>
       </section>
