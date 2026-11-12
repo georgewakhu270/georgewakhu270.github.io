@@ -5,9 +5,10 @@ export default function LangWrap({ title, items }) {
 
         <div className="">
             <h1 className="">{title}</h1>
-            <div className="">
+            <div className="flex w-full justify-center">
                 {items.map((item, index) => (
-                    <LangIcons key={index} item={item}/>
+                    <div className="w-1/4" key={index}> <LangIcons  item={item}/></div>
+                    
                 ))}
             </div>
         </div>
