@@ -76,8 +76,7 @@ export const langcontent = [
                 color: "black"
             },
         ]
-    },
-    {
+    }, {
         title: "Version Control & Containerization",
         items: [
             {
