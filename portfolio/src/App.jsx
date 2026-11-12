@@ -1,7 +1,17 @@
-import { SiX } from "@icons-pack/react-simple-icons";
+import { 
+  SiX, SiCss, SiSqlite, SiMongodb, SiPostgresql, SiMysql, SiVim, SiVsco, SiVscodium,  
+} from "@icons-pack/react-simple-icons";
 import { Mail, ArrowDown, ArrowUp } from "lucide-react"
 import { useEffect, useRef, useState } from "react";
-import { FaLinkedin, FaWhatsapp, FaGithub } from 'react-icons/fa';
+import { 
+  FaLinkedin, FaWhatsapp, FaGithub, FaHtml5, FaJava, FaJs, FaPython, FaPhp, FaDocker, FaGit, FaWindows, FaLinux
+} from 'react-icons/fa';
+
+import { DiCode, DiGit } from "react-icons/di"
+import {VscVscode} from "react-icons/vsc"
+import { langcontent } from "./data"
+import LangWrap from "./assets/elements/LangWrap"
+
 import ItemSpan from "./assets/elements/ItemSpan";
 import computer from "./assets/computer.jpg";
 
@@ -125,7 +135,108 @@ function App() {
       </section>
 
       <section className="w-full" id="skills">
+
         <ItemSpan text="SKILLS" />
+
+        <div className="">
+          {langcontent.map((item, index) => (
+            <LangWrap key={index} title={item.title} items={item.items}/>
+          ))}
+        </div>
+
+        <div>
+          <h1>Programming Languages</h1>
+
+          <div className="flex w-full justify-center items-center">
+
+            <div className="">
+              <FaHtml5 size={32} color="orange"/>
+            </div>
+            
+            <div className="">
+              <SiCss size={32} color="purple"/>
+            </div>
+
+            <div className="">
+              <FaJs size={32} color="yellow" />
+            </div>
+
+            <div className="">
+              <FaPython size={32} color="#3776AB" />
+            </div>
+
+            <div className="">
+              <FaJava size={32}/>
+            </div>
+
+            <div className="">
+              <FaPhp size={32} color="#3776AC"/>
+            </div>
+
+          </div>
+          
+          <h1 className="">Databases</h1>
+
+          <div className="">
+
+            <div className="">
+              <SiSqlite size={32}/>
+            </div>
+
+            <div className="">
+              <SiMysql size={32}/>
+            </div> 
+
+            <div className="">
+              <SiMongodb size={32} color="green"/>
+            </div>
+          
+          </div>
+          
+          <h1 className="">Tools</h1>
+          
+          <div className="">
+            
+            <div className="">
+              <VscVscode size={32} color="blue"/>
+            </div>
+
+            <div className="">
+              <SiVim size={32}/>
+            </div>
+
+          </div>
+          
+          <h1 className="">Operating Systems</h1>
+          
+          <div className="">
+
+            <div className="">
+              <FaWindows size={32} color="blue"/>
+              <FaLinux size={32} color="black"/>
+            </div>
+
+          </div>
+          
+          <h1 className="">Version Control & Containerization</h1>
+          
+          <div className="">
+
+            <div className="">
+              <DiGit size={32} color="#F05032"/>
+            </div>
+
+            <div className="">
+              <FaGithub size={32}/>
+            </div>
+            
+            <div className="">
+              <FaDocker size={32} color="blue"/>
+            </div>
+          
+          </div>
+        </div>
+
       </section>
 
       <section className="w-full" id="projects">
