@@ -3,6 +3,7 @@ import { Mail, ArrowDown, ArrowUp } from "lucide-react"
 import { useEffect, useRef, useState } from "react";
 import { FaLinkedin, FaWhatsapp, FaGithub } from 'react-icons/fa'
 import ItemSpan from "./assets/elements/ItemSpan";
+import computer from "./assets/computer.jpg"
 
 function App() {
 
@@ -51,30 +52,60 @@ function App() {
           <h1 className="mt-[19px] font-[600] text-[#555d55]">Professional | Problem Solver | Lifelong Learner</h1>
           <h1 className="max-w-[550px] mt-[19px] text-[1.04rem] leading-1.8">I turn ideas into thoughtful, practical solutions. I enjoy learning, solving problems and working with people to make meaningful progress.</h1>
           <div className="mt-9 flex flex-wrap items-center gap-3">
-            <a href="#projects" className="bg-[#20231f] text-white p-[15px] hover:translate-y-[-2px]">Explore my work <ArrowDown size={16}/></a>
-            <a href="mailto:georgewakhu270@gmail.com" className="border border-[#d9ddd6] border-solid px-[20px] py-[14px] hover:translate-y-[-2px]">Get in touch <ArrowUp size={16}/></a>
+            <a href="#projects" className="bg-[#20231f] text-white p-[15px] hover:translate-y-[-2px]">Explore my work <ArrowDown size={16} /></a>
+            <a href="mailto:georgewakhu270@gmail.com" className="border border-[#d9ddd6] border-solid px-[20px] py-[14px] hover:translate-y-[-2px]">Get in touch <ArrowUp size={16} /></a>
           </div>
         </div>
       </section>
-      
-      <section className="w-full" id="about">
-        <ItemSpan text="ABOUT"/> 
+
+      <section className="w-full min-h-[70vh]" id="about">
+        <ItemSpan text="ABOUT" />
+        <div className="p-5 flex flex-col sm:flex-row sm:items-center gap-6">
+          <div className="w-full sm:w-1/2">
+            <img src={computer} className="w-full sm:h-[70vh] border-none rounded-lg shadow-md object-cover" alt="computer"/>
+          </div>
+          <div className="p-2 w-full sm:w-1/2">
+            <div className="text-justify sm:p-3 flex flex-col justify-center space-y-4">
+              <div className="">
+                <p>
+                  I am a full stack developer and data scientist who passionate about building clean, accessible and fast web experiences. I focus on bridging the gap between design and scalable code.
+                </p>
+              </div>
+              <div className="">
+                <p>
+                  I am a computer scientist who is a graduate of Kenyatta University. I have worked with various technologies like python, javascript and PHP to design user interactive and responsive applications to users.
+                  My experience using this technologies have allowed me to pay closer attention to best techniques of building applications.
+                </p>
+              </div>
+              <div className="">
+                <p>
+                  When not working in tech, I enjoy evenings reading a book, going on hike or watching a movie.
+                </p>
+              </div>
+              <div className="">
+                <p>I’m currently open to full-time roles and freelance projects. Feel free to reach out via email or check out my work below!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </section>
-      
+
       <section className="w-full" id="skills">
-        <ItemSpan text="SKILLS"/>
+        <ItemSpan text="SKILLS" />
       </section>
-      
+
       <section className="w-full" id="projects">
-        <ItemSpan text="PROJECTS"/>
+        <ItemSpan text="PROJECTS" />
       </section>
-      
+
       <section className="w-full" id="blogs">
-        <ItemSpan text="BLOGS"/>
+        <ItemSpan text="BLOGS" />
       </section>
-      
+
       <section className="w-full p-2" id="contacts">
-        <ItemSpan text="CONTACTS"/>
+        <ItemSpan text="CONTACTS" />
         <div className="flex gap-5 items-center justify-center w-full m-auto p-2">
           <a href="https://wa.me/+254114386583" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp color="#25D366" size={32} />
